@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section_1"></section>
+      <section class="section_2">
+        <div class="box green"></div>
+      </section>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 600rem;
+      width: 100%;
+      background-color: rgb(235, 255, 209);
+    }
+    .section_1 {
+      height: 100vh;
+    }
+    .section_2 {
+      height: 100vh;
+      position: relative;
+    }
+    .box {
+      position: absolute;
+      height: 10rem;
+      width: 10rem;
+      border-radius: 2rem;
+      border-style: dashed;
+      border-width: 0.5rem;
+      top: 30%;
+      left: 20%;
+    }
+    .green {
+      background-color: #a9ff3a;
+    }
+  </style>
+  <script type="module" src="./main.ts"></script>
+</html>
