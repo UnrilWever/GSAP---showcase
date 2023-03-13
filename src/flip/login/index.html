@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header_bar"></header>
+    <section class="login_cover">
+      <div class="login_table">
+        <div class="avatar">
+          <img src="/images/avatar.png" alt="" srcset="" />
+        </div>
+        <button class="login_button">登录</button>
+      </div>
+    </section>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .header_bar {
+      display: flex;
+      align-items: center;
+      height: 5vh;
+      background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(118, 138, 118));
+    }
+
+    .header_bar > .avatar {
+      margin-left: 2rem;
+      height: 4vh;
+      width: 4vh;
+    }
+
+    .avatar > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .login_cover {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(85, 85, 85, 0.5);
+    }
+    .login_table {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 20rem;
+      width: 20rem;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px #ffffff;
+      border-radius: 2rem;
+    }
+    .login_button {
+      position: absolute;
+      bottom: -1rem;
+      height: 3rem;
+      width: 8rem;
+      border-radius: 2rem;
+      border-style: none;
+      color: rgb(71, 71, 71);
+    }
+
+    .login_cover > .login_table {
+      position: inherit;
+    }
+    /* 登录框头像样式 */
+    .login_cover > .login_table > .avatar {
+      position: absolute;
+      top: -5rem;
+      height: 10rem;
+      width: 10rem;
+    }
+  </style>
+  <script type="module" src="./main.ts"></script>
+</html>
