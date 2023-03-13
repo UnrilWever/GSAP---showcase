@@ -6,7 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        scrollTrigger: resolve(__dirname, 'src/scrollTrigger/index.html')
+        filp: resolve(__dirname, '/src/filp/index.html')
       }
     }
   }
